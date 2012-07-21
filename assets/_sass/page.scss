@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  :  page.css
+ style info :  ページ固有css
+=================================================================== */
+
+@import "import";
+
+
+
+/*----------------------------------------------------------------------------------
+		 				TOPページ
+------------------------------------------------------------------------------------*/
+#topPage {
+	position:relative;
+	width: 100%;
+	min-width: 1024px;
+	overflow: hidden;
+	
+	ul#slideBtn {
+		li#btnPrev,
+		li#btnNext {
+			position: fixed;
+			top: 80px;
+			z-index: 5;
+		}
+		
+		li#btnPrev {
+			left: 0;
+		}
+		
+		li#btnNext {
+			right: 0;
+		}
+		
+		li {
+			cursor:pointer;
+		}
+	}
+	
+	
+	
+	div#slideContents {
+		position: relative;
+		top: 0;
+		z-index: 2;
+		
+		ul.shelfList01 {
+			@extend .clearfix;
+			
+			li {
+				width:203px;
+				position: absolute;
+			}
+			
+			li.detail {
+				cursor: pointer;
+			}
+		}
+	}
+	
+	div.east {
+		width:2560px;
+		height: 950px;
+		background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+		
+		ul.row01 {
+			li {
+				height:117px;
+				top: 8px;
+			}
+			
+			li#e-1-1 { left: 431px;}
+			li#e-1-2 { left: 643px;}
+			li#e-1-3 { left: 856px;}
+			li#e-1-4 { left: 1069px;}
+			li#e-1-5 { left: 1282px;}
+			li#e-1-6 { left: 1495px;}
+			li#e-1-7 { left: 1708px;}
+			li#e-1-8 { left: 1921px;}
+			li#e-1-9 { left: 2134px;}
+		}
+		
+		ul.row02 {
+			li {
+				height:148px;
+				top: 132px;
+			}
+			
+			/*li#e-2-1 { left: 431px;}*/
+			li#e-2-2 { left: 536px;}
+			li#e-2-3 { left: 748px;}
+			li#e-2-4 { left: 960px;}
+			li#e-2-5 { left: 1172px;}
+			li#e-2-6 { left: 1384px;}
+			li#e-2-7 { left: 1596px;}
+			li#e-2-8 { left: 1808px;}
+		}
+		
+		ul.row03 {
+			li {
+				height:148px;
+				top: 289px;
+			}
+			
+			li#e-3-1 { left: 431px;}
+			li#e-3-2 { left: 643px;}
+			li#e-3-3 { left: 855px;}
+			li#e-3-4 { left: 1067px;}
+			li#e-3-5 { left: 1279px;}
+			li#e-3-6 { left: 1491px;}
+			li#e-3-7 { left: 1703px;}
+			li#e-3-8 { left: 1915px;}
+		}
+		
+		ul.row04 {
+			li {
+				height:148px;
+				top: 444px;
+			}
+			
+			li#e-4-2 { left: 537px;}
+			li#e-4-3 { left: 749px;}
+			li#e-4-4 { left: 961px;}
+			li#e-4-5 { left: 1173px;}
+			li#e-4-6 { left: 1385px;}
+			li#e-4-7 { left: 1597px;}
+			li#e-4-8 { left: 1809px;}
+		}
+	}
+	
+	
+}
+
+
+
+
+/*----------------------------------------------------------------------------------
+		 				詳細ページ
+------------------------------------------------------------------------------------*/
+
+#detail {
+	#profile {
+		@extend .clearfix;
+		padding-bottom: 15px;
+		
+		h1 {
+			float: left;
+			width: 300px;
+			display:table;
+			
+			span.photo {
+				width: 60px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+			span.text {
+				display: table-cell;
+				vertical-align: middle;
+				font-size: $yui20px;
+			}
+		}
+		
+		div#profileRight {
+			width: 700px;
+			float: left;
+		}
+	}
+	
+	div#bookArea {
+		@extend .clearfix;
+		padding-bottom: 15px;
+		
+		div#bookShelf {
+			
+			width: 600px;
+			float: left;
+			background: #999;
+			
+			div#bookImage {
+				display:table;
+			
+				p {
+					display: table-cell;
+					vertical-align:middle;
+					height:500px;
+					
+					img {
+						
+					}
+				}
+			}
+		}
+		
+		div#fbComments {
+			width: 400px;
+			height:500px;
+			float: right;
+			overflow-y: scroll;
+		}
+	}
+	
+	div#bookDetailList01 {
+		@extend .clearfix;
+		
+		div.box {
+			float: left;
+			width:174px;
+			padding: 10px;
+			margin: 0 10px 10px 0;
+			background: #eee;
+			-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+					border-radius: 5px;
+			p.photo {
+				width:174px;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+			
+			.title {
+				font-size: $yui16px;
+				padding-bottom:5px;
+			}
+			
+			.author {
+			}
+		}
+	}
+	
+}
+
+

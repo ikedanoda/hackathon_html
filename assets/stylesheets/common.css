@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  :  common.css
+ style info :  サイト全体共通css
+=================================================================== */
+.clearfix, .wrapInner {
+  *zoom: 1;
+}
+.clearfix:after, .wrapInner:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* fontsize YUI
+10px = 77% 11px = 85% 12px = 93% 13px = 100%
+14px = 108% 15px = 116% 16px = 123.1% 17px = 131%
+18px = 138.5% 19px = 146.5% 20px = 153.9% 21px = 161.6%
+22px = 167% 23px = 174% 24px = 182% 25px = 189% 26px = 197% */
+/*
+
+/*----------------------------------------------------------------------------------
+		 								body、リンク色設定 
+------------------------------------------------------------------------------------*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  color: #ccc;
+}
+
+body {
+  color: black;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro W3', 'メイリオ',Meiryo, 'ＭＳ Ｐゴシック', Arial, verdana, sans-serif;
+  word-wrap: break-word;
+}
+
+/* 基本リンク色 */
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  top: -4px;
+  margin-right: 10px;
+}
+
+/*----------------------------------------------------------------------------------
+		 				共通内側要素の幅
+------------------------------------------------------------------------------------*/
+.wrapInner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------
+		 				header
+------------------------------------------------------------------------------------*/
+#globalHeader {
+  background: #171717;
+  width: 100%;
+  padding: 10px 0;
+}
+#globalHeader .wrapInner {
+  background: #171717;
+}
+#globalHeader h1 {
+  text-align: center;
+}
+
+/*----------------------------------------------------------------------------------
+		 				contentsWrapper
+------------------------------------------------------------------------------------*/
+div#contentsWrapper {
+  line-height: 1.6;
+  padding: 0 0;
+}
+
+/*----------------------------------------------------------------------------------
+		 				footer
+------------------------------------------------------------------------------------*/
+#globalFooter {
+  background: #171717;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+}
+#globalFooter .wrapInner {
+  background: #171717;
+}

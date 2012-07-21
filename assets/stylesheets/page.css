@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  :  page.css
+ style info :  ページ固有css
+=================================================================== */
+.clearfix, #topPage div#slideContents ul.shelfList01, #detail #profile, #detail div#bookArea, #detail div#bookDetailList01 {
+  *zoom: 1;
+}
+.clearfix:after, #topPage div#slideContents ul.shelfList01:after, #detail #profile:after, #detail div#bookArea:after, #detail div#bookDetailList01:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*----------------------------------------------------------------------------------
+		 				TOPページ
+------------------------------------------------------------------------------------*/
+#topPage {
+  position: relative;
+  width: 100%;
+  min-width: 1024px;
+  overflow: hidden;
+}
+#topPage ul#slideBtn li#btnPrev,
+#topPage ul#slideBtn li#btnNext {
+  position: fixed;
+  top: 80px;
+  z-index: 5;
+}
+#topPage ul#slideBtn li#btnPrev {
+  left: 0;
+}
+#topPage ul#slideBtn li#btnNext {
+  right: 0;
+}
+#topPage ul#slideBtn li {
+  cursor: pointer;
+}
+#topPage div#slideContents {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+#topPage div#slideContents ul.shelfList01 li {
+  width: 203px;
+  position: absolute;
+}
+#topPage div#slideContents ul.shelfList01 li.detail {
+  cursor: pointer;
+}
+#topPage div.east {
+  width: 2560px;
+  height: 950px;
+  background: url(/assets/images/common/bg_east.jpg) 0 0 no-repeat;
+}
+#topPage div.east ul.row01 li {
+  height: 117px;
+  top: 8px;
+}
+#topPage div.east ul.row01 li#e-1-1 {
+  left: 431px;
+}
+#topPage div.east ul.row01 li#e-1-2 {
+  left: 643px;
+}
+#topPage div.east ul.row01 li#e-1-3 {
+  left: 856px;
+}
+#topPage div.east ul.row01 li#e-1-4 {
+  left: 1069px;
+}
+#topPage div.east ul.row01 li#e-1-5 {
+  left: 1282px;
+}
+#topPage div.east ul.row01 li#e-1-6 {
+  left: 1495px;
+}
+#topPage div.east ul.row01 li#e-1-7 {
+  left: 1708px;
+}
+#topPage div.east ul.row01 li#e-1-8 {
+  left: 1921px;
+}
+#topPage div.east ul.row01 li#e-1-9 {
+  left: 2134px;
+}
+#topPage div.east ul.row02 {
+  /*li#e-2-1 { left: 431px;}*/
+}
+#topPage div.east ul.row02 li {
+  height: 148px;
+  top: 132px;
+}
+#topPage div.east ul.row02 li#e-2-2 {
+  left: 536px;
+}
+#topPage div.east ul.row02 li#e-2-3 {
+  left: 748px;
+}
+#topPage div.east ul.row02 li#e-2-4 {
+  left: 960px;
+}
+#topPage div.east ul.row02 li#e-2-5 {
+  left: 1172px;
+}
+#topPage div.east ul.row02 li#e-2-6 {
+  left: 1384px;
+}
+#topPage div.east ul.row02 li#e-2-7 {
+  left: 1596px;
+}
+#topPage div.east ul.row02 li#e-2-8 {
+  left: 1808px;
+}
+#topPage div.east ul.row03 li {
+  height: 148px;
+  top: 289px;
+}
+#topPage div.east ul.row03 li#e-3-1 {
+  left: 431px;
+}
+#topPage div.east ul.row03 li#e-3-2 {
+  left: 643px;
+}
+#topPage div.east ul.row03 li#e-3-3 {
+  left: 855px;
+}
+#topPage div.east ul.row03 li#e-3-4 {
+  left: 1067px;
+}
+#topPage div.east ul.row03 li#e-3-5 {
+  left: 1279px;
+}
+#topPage div.east ul.row03 li#e-3-6 {
+  left: 1491px;
+}
+#topPage div.east ul.row03 li#e-3-7 {
+  left: 1703px;
+}
+#topPage div.east ul.row03 li#e-3-8 {
+  left: 1915px;
+}
+#topPage div.east ul.row04 li {
+  height: 148px;
+  top: 444px;
+}
+#topPage div.east ul.row04 li#e-4-2 {
+  left: 537px;
+}
+#topPage div.east ul.row04 li#e-4-3 {
+  left: 749px;
+}
+#topPage div.east ul.row04 li#e-4-4 {
+  left: 961px;
+}
+#topPage div.east ul.row04 li#e-4-5 {
+  left: 1173px;
+}
+#topPage div.east ul.row04 li#e-4-6 {
+  left: 1385px;
+}
+#topPage div.east ul.row04 li#e-4-7 {
+  left: 1597px;
+}
+#topPage div.east ul.row04 li#e-4-8 {
+  left: 1809px;
+}
+
+/*----------------------------------------------------------------------------------
+		 				詳細ページ
+------------------------------------------------------------------------------------*/
+#detail #profile {
+  padding-bottom: 15px;
+}
+#detail #profile h1 {
+  float: left;
+  width: 300px;
+  display: table;
+}
+#detail #profile h1 span.photo {
+  width: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#detail #profile h1 span.text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 153.9%;
+}
+#detail #profile div#profileRight {
+  width: 700px;
+  float: left;
+}
+#detail div#bookArea {
+  padding-bottom: 15px;
+}
+#detail div#bookArea div#bookShelf {
+  width: 600px;
+  float: left;
+  background: #999;
+}
+#detail div#bookArea div#bookShelf div#bookImage {
+  display: table;
+}
+#detail div#bookArea div#bookShelf div#bookImage p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 500px;
+}
+#detail div#bookArea div#fbComments {
+  width: 400px;
+  height: 500px;
+  float: right;
+  overflow-y: scroll;
+}
+#detail div#bookDetailList01 div.box {
+  float: left;
+  width: 174px;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  background: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#detail div#bookDetailList01 div.box p.photo {
+  width: 174px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#detail div#bookDetailList01 div.box .title {
+  font-size: 123.1%;
+  padding-bottom: 5px;
+}
