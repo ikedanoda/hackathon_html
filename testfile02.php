@@ -3,4 +3,8 @@
 	phpinfo();
 	echo 'abc';
 	
+	echo 'ccc';
+	
+	echo 'bbb';
+
 ?>
