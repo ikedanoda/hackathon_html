@@ -11,5 +11,9 @@
 	
 	class test {
 		public $test;
+		
+		public function aaa() {
+			echo 'aaa';
+		}
 	}
 ?>
