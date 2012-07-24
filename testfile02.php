@@ -5,6 +5,7 @@
 	
 	public function test01 () {
 		echo 'test01';
+		echo '池田';
 	}
 	
 ?>
