@@ -1,5 +1,5 @@
 <?php
-	echo 'ccc';
-	
-	echo 'bbb';
+	function user02 () {
+		echo 'user02';
+	}
 ?>
