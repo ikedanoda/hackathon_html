@@ -15,5 +15,9 @@
 		public function aaa() {
 			echo 'aaa';
 		}
+		
+		public function bbb() {
+			echo 'bbb';
+		}
 	}
 ?>
