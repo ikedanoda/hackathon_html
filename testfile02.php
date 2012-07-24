@@ -1,10 +1,5 @@
 <?php
-	echo 'aaa';
-	phpinfo();
-	echo 'abc';
-	
-	echo 'ccc';
-	
-	echo 'bbb';
-
+	function user01 () {
+		echo 'user01';
+	}
 ?>
