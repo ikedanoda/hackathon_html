@@ -1,6 +1,6 @@
 <?php
-	function user01 () {
-		echo 'user01';
+	function user02 () {
+		echo 'user02';
 	}
 	
 	
