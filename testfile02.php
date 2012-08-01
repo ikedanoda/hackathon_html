@@ -7,6 +7,7 @@
 		echo 'test01';
 		echo '池田';
 		echo 'test02';
+		echo 'aaa';
 	}
 	
 	class test {
