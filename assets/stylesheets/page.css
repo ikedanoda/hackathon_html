@@ -50,6 +50,10 @@ CSS information
 }
 #topPage div#slideContents ul.shelfList01 li.detail {
   cursor: pointer;
+  background: #FFFFFF;
+}
+#topPage div#slideContents ul.shelfList01 li.detail:hover img {
+	opacity: .6;
 }
 #topPage div.east {
   width: 2560px;
